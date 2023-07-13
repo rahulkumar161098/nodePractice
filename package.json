@@ -10,6 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.3.3",
     "upper-case": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
