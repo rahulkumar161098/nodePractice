@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav" >
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dashboard">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="add_product">Add Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="update_product">Update Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="profile">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="signup">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="login">Login</a>
+        </li>
+        <li class="nav-item">
+          <button (click)="logOut()" class="outbtn">LogOut</button>
+        </li>
+
+        
+      </ul>
+    </div>
+    
+  </div>
+</nav>

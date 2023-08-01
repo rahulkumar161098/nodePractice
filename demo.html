@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/mobiscroll.javascript.min.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+
+    <div id="demo-1-month"></div>
+    <div id="demo-2-months"></div>
+    <div id="demo-3-months"></div>
+    <div id="demo-auto"></div>
+
+    <script>
+        mobiscroll.setOptions({
+            theme: 'ios',
+            themeVariant: 'light'
+        });
+
+        mobiscroll.datepicker('#demo-1-month', {
+            controls: ['calendar'],
+            display: 'inline',
+            calendarType: 'month',
+            pages: 1
+        });
+
+        mobiscroll.datepicker('#demo-2-months', {
+            controls: ['calendar'],
+            display: 'inline',
+            calendarType: 'month',
+            pages: 2
+        });
+
+        mobiscroll.datepicker('#demo-3-months', {
+            controls: ['calendar'],
+            display: 'inline',
+            calendarType: 'month',
+            pages: 3
+        });
+
+        mobiscroll.datepicker('#demo-auto', {
+            controls: ['calendar'],
+            display: 'inline',
+            calendarType: 'month',
+            pages: 'auto'
+        });
+    </script>
+
+<script src="js/mobiscroll.javascript.min.js"></script>
+
+</body>
+
+</html>

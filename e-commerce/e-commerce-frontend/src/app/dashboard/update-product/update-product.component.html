@@ -1,0 +1,34 @@
+
+<div class="container m-4" style="text-align: center;" >
+    <h4 class="mb-4">Update Your Product</h4>
+    <div class="input_section">
+        <form [formGroup]="productUpdateForm">
+
+            <mat-form-field appearance="outline">
+                <mat-label>Product Name</mat-label>
+                <input matInput  formControlName="p_name" [ngModel]="productById.p_name">
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="outline">
+                <mat-label>Price</mat-label>
+                <input matInput  formControlName="price" [ngModel]="productById.price">
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="outline">
+                <mat-label>Category</mat-label>
+                <input matInput  formControlName="category" [ngModel]="productById.category">
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="outline">
+                <mat-label>Company Name</mat-label>
+                <input matInput  formControlName="company" [ngModel]="productById.company">
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            </mat-form-field>
+            <br>
+            <button mat-raised-button color="accent" (click)="updateProduct()" >Update Product</button>
+        </form>
+    </div>
+</div>
